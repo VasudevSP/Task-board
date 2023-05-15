@@ -12,15 +12,15 @@ export class TaskService {
   }
 
   addtask(data:any): Observable<any>{
-    return this.hc.post('http://localhost:3000/Taskadd',data)
+    return this.hc.post('https://vasudevsp.github.io/Task-board/Taskadd',data)
   }
   gettaskList(): Observable<any>{
-    return this.hc.get('http://localhost:3000/Taskadd')
+    return this.hc.get('https://vasudevsp.github.io/Task-board/Taskadd')
   }
   updateList(id: number,data: any): Observable<any>{
-    return this.hc.put(`http://localhost:3000/Taskadd/${id}`,data);
+    return this.hc.put(`https://vasudevsp.github.io/Task-board/Taskadd/${id}`,data);
   }
   deletetask(id: number): Observable<any>{
-    return this.hc.delete(`http://localhost:3000/Taskadd/${id}`);
+    return this.hc.delete(`https://vasudevsp.github.io/Task-board/Taskadd/${id}`);
   }
 }
